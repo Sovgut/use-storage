@@ -2,10 +2,14 @@
   "name": "@sovgut/use-storage",
   "version": "1.0.0",
   "type": "module",
+  "repository": "https://github.com/Sovgut/use-storage.git",
+  "author": {
+    "name": "Serhii Sovhut",
+    "url": "https://github.com/Sovgut"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest run"
   },
   "peerDependencies": {
@@ -30,5 +34,16 @@
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.1",
     "vitest": "^1.6.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "module": "./dist/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js"
+    }
   }
 }

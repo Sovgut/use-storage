@@ -33,6 +33,7 @@ export default defineConfig({
     react(),
     dts({
       exclude: [
+        "**/test/setup.ts",
         "**/*.test.ts",
         "**/*.test.tsx",
         "**/*.spec.ts",

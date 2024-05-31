@@ -8,16 +8,15 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
 dist-ssr
 *.local
+src
 
 # Coverage
 coverage
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+.vscode
 .idea
 .DS_Store
 *.suo
@@ -25,3 +24,11 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+package-lock.json
+vite.config.ts
+tsconfig.json
+.gitignore
+README.md
+LICENSE
+.github
+.DS_Store
