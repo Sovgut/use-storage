@@ -1,6 +1,6 @@
 {
   "name": "@sovgut/use-storage",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "module",
   "repository": "https://github.com/Sovgut/use-storage.git",
   "author": {
@@ -13,27 +13,27 @@
     "test": "vitest run"
   },
   "peerDependencies": {
-    "@sovgut/state": "^1.1.1",
+    "@sovgut/state": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^15.0.7",
-    "@types/node": "^20.13.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^20.14.11",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-react-refresh": "^0.4.8",
     "jsdom": "^24.1.0",
-    "terser": "^5.31.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vite-plugin-dts": "^3.9.1",
-    "vitest": "^1.6.0"
+    "terser": "^5.31.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^4.0.0-beta.1",
+    "vitest": "^2.0.3"
   },
   "files": [
     "dist"
