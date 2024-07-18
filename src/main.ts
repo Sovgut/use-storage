@@ -27,19 +27,19 @@ export function useStorage<Fallback = unknown>(
     (value: unknown) => {
       switch (strategy) {
         case "cookie": {
-          CookieState.set(key, value);
+          CookieState.setItem(key, value);
           break;
         }
         case "local": {
-          LocalState.set(key, value);
+          LocalState.setItem(key, value);
           break;
         }
         case "memory": {
-          MemoryState.set(key, value);
+          MemoryState.setItem(key, value);
           break;
         }
         case "session": {
-          SessionState.set(key, value);
+          SessionState.setItem(key, value);
           break;
         }
       }
@@ -50,22 +50,22 @@ export function useStorage<Fallback = unknown>(
   useEffect(() => {
     switch (strategy) {
       case "cookie": {
-        setValue(CookieState.get(key, options))
+        setValue(CookieState.getItem(key, options))
         CookieState.on(key, handleOnChangeEvent);
         break;
       }
       case "local": {
-        setValue(LocalState.get(key, options))
+        setValue(LocalState.getItem(key, options))
         LocalState.on(key, handleOnChangeEvent);
         break;
       }
       case "memory": {
-        setValue(MemoryState.get(key, options))
+        setValue(MemoryState.getItem(key, options))
         MemoryState.on(key, handleOnChangeEvent);
         break;
       }
       case "session": {
-        setValue(SessionState.get(key, options))
+        setValue(SessionState.getItem(key, options))
         SessionState.on(key, handleOnChangeEvent);
         break;
       }

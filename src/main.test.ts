@@ -36,7 +36,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe("new-value");
-      expect(LocalState.get(key)).toBe("new-value");
+      expect(LocalState.getItem(key)).toBe("new-value");
     });
 
     it("should use options.fallback", () => {
@@ -51,7 +51,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe(2n);
-      expect(LocalState.get(key)).toBe("2");
+      expect(LocalState.getItem(key)).toBe("2");
     });
 
     it("should use options.cast", () => {
@@ -66,7 +66,7 @@ describe("useStorage", () => {
         });
   
         expect(result.current[0]).toBe(1n);
-        expect(LocalState.get(key)).toBe("1");
+        expect(LocalState.getItem(key)).toBe("1");
       });
   });
 
@@ -81,7 +81,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe("new-value");
-      expect(CookieState.get(key)).toBe("new-value");
+      expect(CookieState.getItem(key)).toBe("new-value");
     });
 
     it("should use options.fallback", () => {
@@ -96,7 +96,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe(2n);
-      expect(CookieState.get(key)).toBe("2");
+      expect(CookieState.getItem(key)).toBe("2");
     });
 
     it("should use options.cast", () => {
@@ -111,7 +111,7 @@ describe("useStorage", () => {
         });
   
         expect(result.current[0]).toBe(1n);
-        expect(CookieState.get(key)).toBe("1");
+        expect(CookieState.getItem(key)).toBe("1");
       });
   });
 
@@ -126,7 +126,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe("new-value");
-      expect(MemoryState.get(key)).toBe("new-value");
+      expect(MemoryState.getItem(key)).toBe("new-value");
     });
 
     it("should use options.fallback", () => {
@@ -141,7 +141,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe(2n);
-      expect(MemoryState.get(key)).toBe("2");
+      expect(MemoryState.getItem(key)).toBe("2");
     });
 
     it("should use options.cast", () => {
@@ -156,7 +156,7 @@ describe("useStorage", () => {
         });
   
         expect(result.current[0]).toBe(1n);
-        expect(MemoryState.get(key)).toBe("1");
+        expect(MemoryState.getItem(key)).toBe("1");
       });
   });
 
@@ -171,7 +171,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe("new-value");
-      expect(SessionState.get(key)).toBe("new-value");
+      expect(SessionState.getItem(key)).toBe("new-value");
     });
 
     it("should use options.fallback", () => {
@@ -186,7 +186,7 @@ describe("useStorage", () => {
       });
 
       expect(result.current[0]).toBe(2n);
-      expect(SessionState.get(key)).toBe("2");
+      expect(SessionState.getItem(key)).toBe("2");
     });
 
     it("should use options.cast", () => {
@@ -201,7 +201,7 @@ describe("useStorage", () => {
         });
   
         expect(result.current[0]).toBe(1n);
-        expect(SessionState.get(key)).toBe("1");
+        expect(SessionState.getItem(key)).toBe("1");
       });
   });
 });
